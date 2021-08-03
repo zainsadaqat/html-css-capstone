@@ -1,0 +1,46 @@
+@font-face {
+  font-family: coco;
+  src: url('./media/fonts/cocogoose/cocogoose.woff');
+}
+
+$darkColor: #272a31;
+$brightColor: #d3d3d3;
+$primaryColor: #ec5242;
+$textColor: #4f4f4f;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-size: 62.2%;
+  font-family: lato;
+  padding: 1.5em;
+
+  .mobile-navbar {
+    display: block;
+    .fa-bars {
+      font-size: 1.75em;
+      color: grey;
+    }
+  }
+  .about-banner {
+    text-align: center;
+    margin-top: 1.75em;
+    h3 {
+      color: $primaryColor;
+    }
+    h1 {
+      color: $primaryColor;
+      font-family: coco;
+    }
+    .about-paragraph {
+      padding: 1em;
+      border: 1px solid black;
+    }
+  }
+}
