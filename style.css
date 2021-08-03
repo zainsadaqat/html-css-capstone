@@ -22,15 +22,15 @@ body {
   background-color: #ec5242;
   height: 2px;
   width: 30px;
-  margin: 10px auto;
+  margin: 1.25em auto 2.5em;
 }
 
 .separator {
   display: block;
   background-color: #d9d9d9;
   height: 2px;
-  width: 30px;
-  margin: 10px 0;
+  width: 20px;
+  margin: 6px 0 10px 0;
 }
 
 img {
@@ -47,48 +47,52 @@ img {
   color: grey;
 }
 
+.home-page {
+  background-color: #f7f7f7;
+}
+
 .banner-section {
   margin-top: 1.75em;
   padding: 0 20px;
 }
 
-.banner-section h1,
-.banner-section h3 {
-  color: #ec5242;
-}
-
 .banner-section h3 {
   font-weight: 400;
   font-size: 1rem;
+  color: #ec5242;
+  margin-bottom: 0.5em;
 }
 
 .banner-section h1 {
-  font-weight: 900;
-  font-size: 2rem;
+  font-weight: 600;
+  font-size: 1.85rem;
   font-family: coco;
+  color: #ec5242;
+  line-height: 1.15em;
 }
 
 .banner-section .banner-paragraph {
-  margin-top: 20px;
+  margin: 20px 0;
   color: #4f4f4f;
   padding: 1em;
   background-color: #f7f7f7;
+  border: 1px solid #fff;
 }
 
 .banner-section h2 {
   font-weight: 900;
   color: #585858;
   font-size: 1.25rem;
+  margin-bottom: 6px;
 }
 
 .banner-section p {
-  margin-top: 6px;
   color: #767676;
+  padding-bottom: 4em;
 }
 
 .main-program {
   background-color: #272a31;
-  margin-top: 3.5em;
 }
 
 .main-program h2 {
@@ -134,7 +138,7 @@ img {
 }
 
 .program-section .program-box .program-icon {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #f7f7f7;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 10%;
@@ -145,10 +149,10 @@ img {
 .program-section .program-box .program-heading {
   color: #ec5242;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.65rem;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 20%;
-          flex: 1 1 20%;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
   text-align: left;
 }
 
@@ -158,6 +162,8 @@ img {
       -ms-flex: 1 1 60%;
           flex: 1 1 60%;
   text-align: left;
+  font-size: 0.55rem;
+  line-height: 1.65em;
 }
 
 .featured-speakers {
@@ -170,30 +176,37 @@ img {
   color: #272a31;
 }
 
-.featured-speakers button {
-  border: 1px solid grey;
-  padding: 10px 15.5em;
-  margin-bottom: 2em;
-  text-transform: uppercase;
+.featured-speakers .more-button {
+  display: block;
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  padding: 14px 28px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
   background-color: white;
 }
 
-.featured-speakers button .fa-caret-down {
+.featured-speakers .more-button .fa-caret-down {
   color: #ec5242;
-  margin-left: 0.75em;
+  margin-left: 0.5em;
   font-size: 0.75rem;
 }
 
+.featured-speakers .speakers-container {
+  padding: 0 6px 0 20px;
+}
+
 .featured-speakers .speaker-box {
-  padding: 1em 2.35em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .featured-speakers .speaker-box .speaker-image {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
 }
 
 .featured-speakers .speaker-box .speaker-info {
@@ -203,11 +216,12 @@ img {
 
 .featured-speakers .speaker-box .speaker-info h2 {
   text-align: left;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.05em;
 }
 
 .featured-speakers .speaker-box .speaker-info .speaker-intro {
   color: #ec5242;
+  font-size: 0.5rem;
   font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */

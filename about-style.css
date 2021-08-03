@@ -18,6 +18,26 @@ body {
   padding: 1.5em;
 }
 
+body .hr {
+  display: block;
+  background-color: #ec5242;
+  height: 2px;
+  width: 30px;
+  margin: 10px auto;
+}
+
+body .separator {
+  display: block;
+  background-color: #d9d9d9;
+  height: 2px;
+  width: 30px;
+  margin: 10px 0;
+}
+
+body img {
+  max-width: 100%;
+}
+
 body .mobile-navbar {
   display: block;
 }
@@ -29,20 +49,41 @@ body .mobile-navbar .fa-bars {
 
 body .about-banner {
   text-align: center;
-  margin-top: 1.75em;
+  margin-top: 1.5em;
 }
 
 body .about-banner h3 {
   color: #ec5242;
+  margin-bottom: 0.55em;
 }
 
 body .about-banner h1 {
   color: #ec5242;
   font-family: coco;
+  margin-bottom: 0.5em;
+  font-size: 1.85rem;
 }
 
 body .about-banner .about-paragraph {
   padding: 1em;
   border: 1px solid black;
+  margin-bottom: 1em;
+}
+
+body .about-banner .about-address {
+  margin-bottom: 0.25em;
+}
+
+body .about-banner h5 {
+  text-decoration: underline;
+  margin-bottom: 2em;
+}
+
+body .about-sub-section {
+  text-align: center;
+}
+
+body .past-webinars-section {
+  text-align: center;
 }
 /*# sourceMappingURL=about-style.css.map */

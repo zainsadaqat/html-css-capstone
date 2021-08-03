@@ -21,6 +21,26 @@ body {
   font-family: lato;
   padding: 1.5em;
 
+  .hr {
+    display: block;
+    background-color: $primaryColor;
+    height: 2px;
+    width: 30px;
+    margin: 10px auto;
+  }
+
+  .separator {
+    display: block;
+    background-color: #d9d9d9;
+    height: 2px;
+    width: 30px;
+    margin: 10px 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
   .mobile-navbar {
     display: block;
     .fa-bars {
@@ -28,19 +48,43 @@ body {
       color: grey;
     }
   }
+
   .about-banner {
     text-align: center;
-    margin-top: 1.75em;
+    margin-top: 1.5em;
+
     h3 {
       color: $primaryColor;
+      margin-bottom: 0.55em;
     }
+
     h1 {
       color: $primaryColor;
       font-family: coco;
+      margin-bottom: 0.5em;
+      font-size: 1.85rem;
     }
+
     .about-paragraph {
       padding: 1em;
       border: 1px solid black;
+      margin-bottom: 1em;
     }
+    .about-address {
+      margin-bottom: 0.25em;
+    }
+
+    h5 {
+      text-decoration: underline;
+      margin-bottom: 2em;
+    }
+  }
+
+  .about-sub-section {
+    text-align: center;
+  }
+
+  .past-webinars-section {
+    text-align: center;
   }
 }

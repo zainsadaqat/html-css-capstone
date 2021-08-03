@@ -28,15 +28,15 @@ body {
   background-color: $primaryColor;
   height: 2px;
   width: 30px;
-  margin: 10px auto;
+  margin: 1.25em auto 2.5em;
 }
 
 .separator {
   display: block;
   background-color: #d9d9d9;
   height: 2px;
-  width: 30px;
-  margin: 10px 0;
+  width: 20px;
+  margin: 6px 0 10px 0;
 }
 
 img {
@@ -53,43 +53,53 @@ img {
   }
 }
 
+.home-page {
+  background-color: #f7f7f7;
+}
+
 .banner-section {
   margin-top: 1.75em;
   padding: 0 20px;
 
-  h1,
-  h3 {
-    color: $primaryColor;
-  }
   h3 {
     font-weight: 400;
     font-size: 1rem;
+    color: $primaryColor;
+    margin-bottom: 0.5em;
   }
+
   h1 {
-    font-weight: 900;
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: 1.85rem;
     font-family: coco;
+    color: $primaryColor;
+    line-height: 1.15em;
   }
+
   .banner-paragraph {
-    margin-top: 20px;
+    margin: 20px 0;
     color: $textColor;
     padding: 1em;
     background-color: #f7f7f7;
+    border: 1px solid #fff;
   }
+
   h2 {
     font-weight: 900;
     color: #585858;
     font-size: 1.25rem;
+    margin-bottom: 6px;
   }
+
   p {
-    margin-top: 6px;
     color: #767676;
+    padding-bottom: 4em;
   }
 }
 
 .main-program {
   background-color: #272a31;
-  margin-top: 3.5em;
+
   h2 {
     color: #f7f7f7;
     text-align: center;
@@ -100,6 +110,7 @@ img {
 .program-section {
   margin-top: 1em;
   text-align: center;
+
   button {
     color: white;
     background-color: $primaryColor;
@@ -112,6 +123,7 @@ img {
     outline: none;
     border: none;
   }
+
   .program-box {
     display: flex;
     align-items: center;
@@ -121,23 +133,28 @@ img {
     & > * {
       padding: 0.75em;
     }
+
     .program-icon {
-      font-size: 2em;
+      font-size: 1.5em;
       color: #f7f7f7;
       flex: 1 1 10%;
       text-align: center;
     }
+
     .program-heading {
       color: $primaryColor;
       font-weight: 700;
-      font-size: 0.9rem;
-      flex: 1 1 20%;
+      font-size: 0.65rem;
+      flex: 1 1 25%;
       text-align: left;
     }
+
     .program-details {
       color: #f7f7f7;
       flex: 1 1 60%;
       text-align: left;
+      font-size: 0.55rem;
+      line-height: 1.65em;
     }
   }
 }
@@ -145,39 +162,54 @@ img {
 .featured-speakers {
   margin-top: 2em;
   text-align: center;
+
   h2 {
     text-align: center;
     color: $darkColor;
   }
 
-  button {
-    border: 1px solid grey;
-    padding: 10px 15.5em;
-    margin-bottom: 2em;
-    text-transform: uppercase;
+  .more-button {
+    display: block;
+    width: 100%;
+    border: 1px solid #d3d3d3;
+    padding: 14px 28px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
     background-color: white;
+
     .fa-caret-down {
       color: $primaryColor;
-      margin-left: 0.75em;
+      margin-left: 0.5em;
       font-size: 0.75rem;
     }
   }
+
+  .speakers-container {
+    padding: 0 6px 0 20px;
+  }
+
   .speaker-box {
-    padding: 1em 2.35em;
     display: flex;
+
     .speaker-image {
-      width: 160px;
-      height: 160px;
+      width: 180px;
+      height: 180px;
     }
+
     .speaker-info {
       text-align: left;
       padding: 0 1.25em;
+
       h2 {
         text-align: left;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.05em;
       }
+
       .speaker-intro {
         color: $primaryColor;
+        font-size: 0.5rem;
         font-style: italic;
       }
     }
