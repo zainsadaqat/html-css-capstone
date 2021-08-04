@@ -47,7 +47,7 @@ img {
 
   .fa-bars {
     font-size: 1.75em;
-    color: grey;
+    color: rgb(230, 230, 230);
   }
 }
 
@@ -86,8 +86,10 @@ img {
     font-weight: 600;
     font-size: 1.85rem;
     font-family: coco;
-    color: $primaryColor;
     line-height: 1.15em;
+    background: url(./media/images/bg-text.jpg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .banner-paragraph {

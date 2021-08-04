@@ -44,7 +44,7 @@ img {
 
 .mobile-navbar .fa-bars {
   font-size: 1.75em;
-  color: grey;
+  color: #e6e6e6;
 }
 
 .home-page {
@@ -83,8 +83,10 @@ img {
   font-weight: 600;
   font-size: 1.85rem;
   font-family: coco;
-  color: #ec5242;
   line-height: 1.15em;
+  background: url(./media/images/bg-text.jpg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .banner-section .banner-paragraph {
