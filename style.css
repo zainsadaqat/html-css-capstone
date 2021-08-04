@@ -39,15 +39,69 @@ img {
 
 .mobile-navbar {
   display: block;
-  padding: 16px 20px;
+  padding: 20px;
 }
 
 .mobile-navbar .fa-bars {
-  font-size: 1.75em;
+  font-size: 2rem;
   color: #e6e6e6;
 }
 
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.open-menu {
+  padding: 20px;
+  background: #ec5242;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.open-menu .fa-times {
+  font-size: 2rem;
+  color: white;
+}
+
+.open-menu ul {
+  margin-top: 6em;
+}
+
+.open-menu ul > li > a {
+  padding: 0.75em;
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.open-menu ul > li > a:hover {
+  text-decoration: underline;
+}
+
 .home-page {
+  min-height: 80vh;
   background-image: url("./media/images/bg-mobile.jpg");
   background-position: center;
   background-size: cover;
@@ -85,6 +139,7 @@ img {
   font-family: coco;
   line-height: 1.15em;
   background: url(./media/images/bg-text.jpg);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
