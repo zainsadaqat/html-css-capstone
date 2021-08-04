@@ -15,18 +15,17 @@
 body {
   font-size: 62.2%;
   font-family: lato;
-  padding: 1.5em;
 }
 
-body .hr {
+.hr {
   display: block;
   background-color: #ec5242;
   height: 2px;
   width: 30px;
-  margin: 10px auto;
+  margin: 1.25em auto;
 }
 
-body .separator {
+.separator {
   display: block;
   background-color: #d9d9d9;
   height: 2px;
@@ -34,56 +33,216 @@ body .separator {
   margin: 10px 0;
 }
 
-body img {
+hr {
+  background-color: #e0e0e0;
+  margin: 1.5em 0;
+  height: 1px;
+  border: none;
+  outline: none;
+}
+
+img {
   max-width: 100%;
 }
 
-body .mobile-navbar {
+.mobile-navbar {
   display: block;
+  padding: 16px 20px;
 }
 
-body .mobile-navbar .fa-bars {
+.mobile-navbar .fa-bars {
   font-size: 1.75em;
   color: grey;
 }
 
-body .about-banner {
+.about-section {
+  background-color: #f7f7f7;
+}
+
+.about-banner {
   text-align: center;
   margin-top: 1.5em;
+  padding: 0 20px;
 }
 
-body .about-banner h3 {
+.about-banner h3 {
+  font-weight: 400;
+  font-size: 1rem;
   color: #ec5242;
-  margin-bottom: 0.55em;
-}
-
-body .about-banner h1 {
-  color: #ec5242;
-  font-family: coco;
   margin-bottom: 0.5em;
-  font-size: 1.85rem;
 }
 
-body .about-banner .about-paragraph {
-  padding: 1em;
-  border: 1px solid black;
+.about-banner h1 {
+  font-weight: 600;
+  font-size: 1.85rem;
+  font-family: coco;
+  color: #ec5242;
+  line-height: 1.15em;
   margin-bottom: 1em;
 }
 
-body .about-banner .about-address {
-  margin-bottom: 0.25em;
+.about-banner .about-paragraph {
+  padding: 1.3em 0.9em;
+  background-color: white;
+  margin-bottom: 1.4em;
+  line-height: 1.75em;
 }
 
-body .about-banner h5 {
+.about-banner .about-address {
+  margin-bottom: 0.5em;
+}
+
+.about-banner h4 {
   text-decoration: underline;
-  margin-bottom: 2em;
+  padding-bottom: 3em;
 }
 
-body .about-sub-section {
+.about-sub-section {
+  text-align: center;
+  padding: 2em;
+}
+
+.about-sub-section h2 {
+  font-size: 1rem;
+  color: #272a31;
+}
+
+.about-sub-section .logo {
+  border: 1px solid #e0e0e0;
+  padding: 1em;
+  margin: 2em 0 0;
+}
+
+.about-sub-section .logo > img {
+  width: 160px;
+  height: 160px;
+}
+
+.past-webinars-section {
+  text-align: center;
+  padding: 1.75em;
+}
+
+.past-webinars-section .past-details {
+  margin-bottom: 1em;
+}
+
+.past-webinars-section .events {
+  margin: 10px;
+}
+
+.past-webinars-section .events > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  height: 150px;
+}
+
+.past-webinars-section .past-event-1 {
+  background-image: url("./media/images/past-events/event-1.jpg");
+  background-position: center;
+  padding: 1.5em;
+  margin: 10px;
+  color: black;
+  position: relative;
+  z-index: 2;
+}
+
+.past-webinars-section .past-event-1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ec5242;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.past-webinars-section .past-event-2 {
+  background-image: url("./media/images/past-events/event2.jpg");
+  background-position: center;
+  padding: 1.5em;
+  margin: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+.past-webinars-section .past-event-2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ec5242;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.past-webinars-section .past-event-1,
+.past-webinars-section .past-event-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: cover;
+}
+
+.past-webinars-section .past-event-1 h2,
+.past-webinars-section .past-event-2 h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.past-webinars-section .past-event-1 > *,
+.past-webinars-section .past-event-2 > * {
+  z-index: 4;
+  color: white;
+}
+
+.partners-section {
+  background-color: #414246;
   text-align: center;
 }
 
-body .past-webinars-section {
+.partners-section h2 {
+  color: #f7f7f7;
   text-align: center;
+  padding-top: 1.25em;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 10px 20px;
+}
+
+.footer img {
+  width: 120px;
+  height: 120px;
 }
 /*# sourceMappingURL=about-style.css.map */
