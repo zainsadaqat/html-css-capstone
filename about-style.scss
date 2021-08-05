@@ -10,15 +10,15 @@ $textColor: #4f4f4f;
 
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
-  list-style: none;
+  padding: 0;
   text-decoration: none;
+  list-style: none;
 }
 
 body {
-  font-size: 62.2%;
   font-family: lato;
+  font-size: 62.3%;
 }
 
 .hr {
@@ -26,27 +26,27 @@ body {
   background-color: $primaryColor;
   height: 2px;
   width: 30px;
-  margin: 1.25em auto;
+  margin: 1.25em auto 2.5em;
 }
 
 .separator {
   display: block;
   background-color: #d9d9d9;
   height: 2px;
-  width: 30px;
-  margin: 10px 0;
-}
-
-hr {
-  background-color: rgb(224, 224, 224);
-  margin: 1.5em 0;
-  height: 1px;
-  border: none;
-  outline: none;
+  width: 20px;
+  margin: 6px 0 10px 0;
 }
 
 img {
   max-width: 100%;
+}
+
+.social-media {
+  display: none;
+}
+
+.desktop-menu {
+  display: none;
 }
 
 .mobile-navbar {
@@ -126,7 +126,7 @@ img {
 
 .about-banner {
   text-align: center;
-  margin-top: 1.5em;
+  margin-top: 5em;
   padding: 0 20px;
 
   h3 {
@@ -146,19 +146,25 @@ img {
   }
 
   .about-paragraph {
-    padding: 1.3em 0.9em;
-    background-color: white;
-    margin-bottom: 1.4em;
-    line-height: 1.75em;
+    margin: 15px 0;
+    color: white;
+    opacity: 0.8;
+    padding: 1em;
+    background-color: transparent;
+    border: 1px solid #fff;
+    line-height: 1.8em;
+    font-size: 0.85rem;
   }
 
   .about-address {
     margin-bottom: 0.5em;
+    color: white;
   }
 
   h4 {
     text-decoration: underline;
     padding-bottom: 3em;
+    color: white;
   }
 }
 
@@ -174,7 +180,6 @@ img {
   .logo {
     border: 1px solid #e0e0e0;
     padding: 1em;
-    margin: 2em 0 0;
   }
 
   .logo > img {
@@ -186,15 +191,13 @@ img {
 .past-webinars-section {
   text-align: center;
   padding: 1.75em;
+  margin: 1em 0;
 
   .past-details {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 
   .events {
-    // display: flex;
-    margin: 10px;
-
     & > * {
       flex: 1 1 auto;
       height: 150px;
@@ -267,11 +270,23 @@ img {
 .partners-section {
   background-color: #414246;
   text-align: center;
-
+  position: relative;
+  padding-bottom: 3em;
   h2 {
     color: #f7f7f7;
     text-align: center;
     padding-top: 1.25em;
+  }
+
+  ul {
+    li {
+      margin: 10px;
+      display: inline-block;
+
+      img {
+        width: 150px;
+      }
+    }
   }
 }
 
@@ -281,11 +296,14 @@ img {
   justify-content: center;
 
   & > * {
-    flex: 1 1 auto;
-    margin: 10px 20px;
+    padding: 0 1em;
+    margin: 0 1em;
   }
+
   img {
     width: 120px;
     height: 120px;
   }
 }
+
+@import 'about-desktop-version';

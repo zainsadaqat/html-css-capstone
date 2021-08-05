@@ -1,4 +1,4 @@
-const body = document.querySelector('boyd');
+const body = document.querySelector('body');
 
 const hamburger = document.querySelector('.mobile-navbar');
 const openMenuContainer = document.querySelector('article.mobile-menu');

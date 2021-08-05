@@ -24,11 +24,29 @@
   </head>
   <body>
     <section class="about-section">
+      <article class="social-media">
+        <ul class="social-media-links container">
+          <li>
+            <a href=""
+              ><img src="./media/images/instagram.svg" alt="" class="icon"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="./media/images/twitter.svg" alt="" class="icon"
+            /></a>
+          </li>
+          <li><a href="">English</a></li>
+          <li><a href="">My Page</a></li>
+          <li><a href="">Logout</a></li>
+        </ul>
+      </article>
+
       <header>
-        <nav class="">
+        <nav class="container hamburger">
           <span class="mobile-navbar"><i class="fas fa-bars"></i></span>
         </nav>
-        <article class="mobile-menu d-none">
+        <article class="container mobile-menu d-none">
           <nav class="open-menu">
             <span class="close-menu-btn"><i class="fas fa-times"></i></span>
             <ul>
@@ -38,8 +56,26 @@
             </ul>
           </nav>
         </article>
+        <article class="desktop-menu">
+          <nav class="desktop-menu-section container">
+            <a href="index.html">
+              <img
+                src="./media/images/Logo.svg"
+                alt="Logo"
+                class="desktop-logo"
+              />
+            </a>
+            <ul class="desktop-menu-items">
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Schedule</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+            <button href="#" class="contact-btn">Contact Us</button>
+          </nav>
+        </article>
       </header>
-      <main class="about-banner">
+
+      <main class="about-banner container">
         <h3>"Hello! Cyber World"</h3>
         <h1>CYBER SECURITY WEBINAR 2021</h1>
         <p class="about-paragraph">
@@ -53,27 +89,27 @@
         <h4>contact@webinar.com</h4>
       </main>
     </section>
-    <section class="about-sub-section">
+    <section class="about-sub-section container">
       <h2>Cyber Security<br />Webinar 2021 LOGO</h2>
       <article class="hr"></article>
-      <p>
+      <p class="sub-container">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis
         doloremque pariatur blanditiis praesentium consectetur eum in explicabo
         tempore aliquam iste.
       </p>
-      <article class="logo">
+      <article class="logo sub-container">
         <img src="./media/images/Logo.svg" alt="LOGO" />
       </article>
     </section>
     <hr />
-    <section class="past-webinars-section">
+    <section class="past-webinars-section container">
       <h2 class="past-heading">See the past Webinars</h2>
       <article class="hr"></article>
-      <p class="past-details">
+      <p class="past-details sub-container">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
         incidunt!
       </p>
-      <ul class="events">
+      <ul class="events sub-container">
         <li class="past-event-1">
           <h2>2016</h2>
           <p>Lorem ipsum dolor</p>
@@ -88,19 +124,23 @@
     <section class="partners-section">
       <h2>Partners</h2>
       <article class="hr"></article>
-      <ul class="partners">
-        <li><img src="./media/images/partners/Apple.svg" alt="Aplle" /></li>
+      <ul class="partners container">
+        <li><img src="./media/images/partners/apple.svg" alt="Apple" /></li>
+        <li><img src="./media/images/partners/google.svg" alt="Google" /></li>
         <li>
-          <img src="./media/images/partners/Facebook.svg" alt="Facebook" />
+          <img src="./media/images/partners/airbnb-logo.svg" alt="Mozilla" />
         </li>
-        <li><img src="./media/images/partners/Google.svg" alt="Google" /></li>
-        <li><img src="./media/images/partners/Mozilla.svg" alt="Mozilla" /></li>
-        <li><img src="./media/images/partners/Twitter.svg" alt="Twitter" /></li>
+        <li>
+          <img src="./media/images/partners/instagram.svg" alt="Twitter" />
+        </li>
+        <li>
+          <img src="./media/images/partners/netflix.svg" alt="Twitter" />
+        </li>
       </ul>
     </section>
 
     <footer>
-      <ul class="footer">
+      <ul class="footer container">
         <li><img src="./media/images/Logo.svg" alt="Logo" /></li>
         <li>2021 Pakistan, All copy rights are reserved</li>
       </ul>

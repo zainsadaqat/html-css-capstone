@@ -154,10 +154,13 @@ img {
 
 .banner-section .banner-paragraph {
   margin: 20px 0;
-  color: #4f4f4f;
+  color: white;
+  opacity: 0.8;
   padding: 1em;
-  background-color: #f7f7f7;
+  background-color: transparent;
   border: 1px solid #fff;
+  line-height: 1.8em;
+  font-size: 0.85rem;
 }
 
 .banner-section h2 {
@@ -363,12 +366,9 @@ img {
   .hamburger,
   .mobile-menu {
     display: none;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
   }
   .social-media {
-    display: none;
+    display: block;
     background-color: #3e3e3e;
     z-index: 10;
     color: white;
@@ -377,6 +377,21 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .social-media .social-media-links li {
+    padding: 6px;
+  }
+  .social-media .social-media-links li > a {
+    color: white;
+  }
+  .social-media .social-media-links li > a > .icon {
+    width: 14px;
   }
   .desktop-menu {
     display: block;
@@ -386,7 +401,7 @@ img {
     padding: 10px 20px;
     background-color: white;
   }
-  .desktop-menu nav > img {
+  .desktop-menu nav > a > img {
     width: 70px;
   }
   .desktop-menu .desktop-menu-section {

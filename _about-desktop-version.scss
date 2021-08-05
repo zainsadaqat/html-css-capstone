@@ -4,9 +4,16 @@
     margin: 0 auto;
   }
 
+  .sub-container {
+    max-width: 600px;
+    margin: 2em auto;
+  }
+
   .hamburger,
   .mobile-menu {
     display: none;
+    position: sticky;
+    top: 0;
   }
 
   .social-media {
@@ -73,11 +80,11 @@
     }
   }
 
-  .banner-section {
+  .about-banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     min-height: 80vh;
 
     h1 {
@@ -88,6 +95,10 @@
     .banner-paragraph {
       max-width: 400px;
     }
+  }
+
+  .events {
+    display: flex;
   }
 
   .program-section {
