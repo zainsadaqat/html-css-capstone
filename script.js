@@ -1,5 +1,3 @@
-const body = document.querySelector('body');
-
 const hamburger = document.querySelector('.mobile-navbar');
 const openMenuContainer = document.querySelector('article.mobile-menu');
 const closeMenuBtn = document.querySelector('.close-menu-btn');
@@ -66,7 +64,7 @@ const featuredSpeakers = [
 const speakersContainer = document.querySelector('.speakers-container');
 
 featuredSpeakers.forEach((speaker) => {
-  //create elements
+  // create elements
   const speakerBox = document.createElement('ul');
   const speakerImage = document.createElement('li');
   const img = document.createElement('img');
@@ -77,23 +75,23 @@ featuredSpeakers.forEach((speaker) => {
   const separator = document.createElement('article');
   const speakerAddress = document.createElement('p');
 
-  //text content
+  // text content
   speakerName.textContent = speaker.fullName;
   speakerTitle.textContent = speaker.title;
   speakerAddress.textContent = speaker.address;
 
-  //set attributes
+  // set attributes
   img.setAttribute('src', speaker.image);
   img.setAttribute('alt', speaker.alt);
 
-  //add css classes
+  // add css classes
   speakerBox.classList.add('speaker-box');
   speakerImage.classList.add('speaker-image');
   speakerInfo.classList.add('speaker-info');
   speakerTitle.classList.add('speaker-intro');
   separator.classList.add('separator');
 
-  //append elements
+  // append elements
   speakerImage.append(img);
 
   article.append(speakerName);
