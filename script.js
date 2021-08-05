@@ -62,3 +62,49 @@ const featuredSpeakers = [
     address: '3517 W. Gray St. Utica, Pennsylvania 57867',
   },
 ];
+
+const speakersContainer = document.querySelector('.speakers-container');
+
+featuredSpeakers.forEach((speaker) => {
+  //create elements
+  const speakerBox = document.createElement('ul');
+  const speakerImage = document.createElement('li');
+  const img = document.createElement('img');
+  const speakerInfo = document.createElement('li');
+  const article = document.createElement('article');
+  const speakerName = document.createElement('h2');
+  const speakerTitle = document.createElement('p');
+  const separator = document.createElement('article');
+  const speakerAddress = document.createElement('p');
+
+  //text content
+  speakerName.textContent = speaker.fullName;
+  speakerTitle.textContent = speaker.title;
+  speakerAddress.textContent = speaker.address;
+
+  //set attributes
+  img.setAttribute('src', speaker.image);
+  img.setAttribute('alt', speaker.alt);
+
+  //add css classes
+  speakerBox.classList.add('speaker-box');
+  speakerImage.classList.add('speaker-image');
+  speakerInfo.classList.add('speaker-info');
+  speakerTitle.classList.add('speaker-intro');
+  separator.classList.add('separator');
+
+  //append elements
+  speakerImage.append(img);
+
+  article.append(speakerName);
+  article.append(speakerTitle);
+  article.append(separator);
+  article.append(speakerAddress);
+
+  speakerInfo.append(article);
+
+  speakerBox.append(speakerImage);
+  speakerBox.append(speakerInfo);
+
+  speakersContainer.appendChild(speakerBox);
+});
