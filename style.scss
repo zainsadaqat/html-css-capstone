@@ -17,7 +17,7 @@ $textColor: #4f4f4f;
 }
 
 body {
-  font-family: lato, 'sans-serif';
+  font-family: lato, sans-serif;
   font-size: 62.3%;
 }
 
@@ -138,7 +138,7 @@ img {
   h1 {
     font-weight: 600;
     font-size: 1.85rem;
-    font-family: coco, 'sans-serif';
+    font-family: coco, sans-serif;
     line-height: 1.15em;
     background: url(./media/images/bg-text.jpg);
     -webkit-background-clip: text;
@@ -176,6 +176,22 @@ img {
     color: #f7f7f7;
     text-align: center;
     padding-top: 1.25em;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > * {
+    padding: 0 1em;
+    margin: 0 1em;
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
   }
 }
 
@@ -298,22 +314,6 @@ img {
         font-style: italic;
       }
     }
-  }
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  & > * {
-    padding: 0 1em;
-    margin: 0 1em;
-  }
-
-  img {
-    width: 120px;
-    height: 120px;
   }
 }
 
