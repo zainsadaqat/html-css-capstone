@@ -109,7 +109,7 @@ img {
 }
 
 .home-page {
-  min-height: 80vh;
+  min-height: 70vh;
   background-image: url("./media/images/bg-mobile.jpg");
   background-position: center;
   background-size: cover;
@@ -311,6 +311,50 @@ img {
   font-style: italic;
 }
 
+.partners-section {
+  background-color: #414246;
+  text-align: center;
+  position: relative;
+  padding-bottom: 3em;
+}
+
+.partners-section h2 {
+  color: #f7f7f7;
+  text-align: center;
+  padding-top: 1.25em;
+}
+
+.partners-section ul li {
+  margin: 10px;
+  display: inline-block;
+}
+
+.partners-section ul li img {
+  width: 150px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer > * {
+  padding: 0 1em;
+  margin: 0 1em;
+}
+
+.footer img {
+  width: 120px;
+  height: 120px;
+}
+
 @media (min-width: 762px) {
   .container {
     max-width: 1000px;
@@ -429,6 +473,20 @@ img {
   .speakers-container .speaker-box {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+  }
+  .featured-speakers .more-button {
+    display: none;
+  }
+  .partners-section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 /*# sourceMappingURL=style.css.map */
