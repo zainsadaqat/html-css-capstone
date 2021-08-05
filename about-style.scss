@@ -17,7 +17,7 @@ $textColor: #4f4f4f;
 }
 
 body {
-  font-family: lato;
+  font-family: lato, 'sans-serif';
   font-size: 62.3%;
 }
 
@@ -139,7 +139,7 @@ img {
   h1 {
     font-weight: 600;
     font-size: 1.85rem;
-    font-family: coco;
+    font-family: coco, 'sans-serif';
     color: $primaryColor;
     line-height: 1.15em;
     margin-bottom: 1em;
@@ -276,6 +276,7 @@ img {
   text-align: center;
   position: relative;
   padding-bottom: 3em;
+  
   h2 {
     color: #f7f7f7;
     text-align: center;

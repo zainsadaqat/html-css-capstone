@@ -17,7 +17,7 @@ $textColor: #4f4f4f;
 }
 
 body {
-  font-family: lato;
+  font-family: lato, 'sans-serif';
   font-size: 62.3%;
 }
 
@@ -138,10 +138,9 @@ img {
   h1 {
     font-weight: 600;
     font-size: 1.85rem;
-    font-family: coco;
+    font-family: coco, 'sans-serif';
     line-height: 1.15em;
     background: url(./media/images/bg-text.jpg);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -238,6 +237,30 @@ img {
   }
 }
 
+.partners-section {
+  background-color: #414246;
+  text-align: center;
+  position: relative;
+  padding-bottom: 3em;
+
+  h2 {
+    color: #f7f7f7;
+    text-align: center;
+    padding-top: 1.25em;
+  }
+
+  ul {
+    li {
+      margin: 10px;
+      display: inline-block;
+
+      img {
+        width: 150px;
+      }
+    }
+  }
+}
+
 .featured-speakers {
   margin-top: 2em;
   text-align: center;
@@ -273,29 +296,6 @@ img {
         color: $primaryColor;
         font-size: 0.5rem;
         font-style: italic;
-      }
-    }
-  }
-}
-
-.partners-section {
-  background-color: #414246;
-  text-align: center;
-  position: relative;
-  padding-bottom: 3em;
-  h2 {
-    color: #f7f7f7;
-    text-align: center;
-    padding-top: 1.25em;
-  }
-
-  ul {
-    li {
-      margin: 10px;
-      display: inline-block;
-
-      img {
-        width: 150px;
       }
     }
   }
