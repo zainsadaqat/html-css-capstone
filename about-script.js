@@ -1,5 +1,3 @@
-const body = document.querySelector('body');
-
 const hamburger = document.querySelector('.mobile-navbar');
 const openMenuContainer = document.querySelector('article.mobile-menu');
 const closeMenuBtn = document.querySelector('.close-menu-btn');
