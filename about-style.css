@@ -183,6 +183,10 @@ img {
   color: #272a31;
 }
 
+.about-sub-section p {
+  margin-bottom: 1em;
+}
+
 .about-sub-section .logo {
   border: 1px solid #e0e0e0;
   padding: 1em;

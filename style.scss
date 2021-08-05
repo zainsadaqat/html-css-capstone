@@ -226,12 +226,13 @@ img {
   .join-button {
     color: white;
     background-color: $primaryColor;
-    padding: 1.3em 2em;
+    padding: 1em 1.5em;
     font-weight: 600;
     letter-spacing: 0.11em;
+    line-height: 1.5em;
     font-size: 1rem;
     text-align: center;
-    margin: 1.25em 0;
+    margin: 1.25em;
     outline: none;
     border: none;
   }
@@ -244,24 +245,6 @@ img {
   h2 {
     text-align: center;
     color: $darkColor;
-  }
-
-  .more-button {
-    display: block;
-    width: 100%;
-    border: 1px solid #d3d3d3;
-    padding: 14px 28px;
-    font-size: 0.85rem;
-    cursor: pointer;
-    text-align: center;
-    margin: 0 auto;
-    background-color: white;
-
-    .fa-caret-down {
-      color: $primaryColor;
-      margin-left: 0.5em;
-      font-size: 0.75rem;
-    }
   }
 
   .speakers-container {
