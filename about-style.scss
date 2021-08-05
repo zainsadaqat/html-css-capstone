@@ -51,16 +51,77 @@ img {
 
 .mobile-navbar {
   display: block;
-  padding: 16px 20px;
+  padding: 20px;
 
   .fa-bars {
-    font-size: 1.75em;
+    font-size: 2rem;
     color: rgb(230, 230, 230);
   }
 }
 
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.open-menu {
+  padding: 20px;
+  background: $primaryColor;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  .fa-times {
+    font-size: 2rem;
+    color: white;
+  }
+
+  ul {
+    margin-top: 6em;
+  }
+
+  ul > li > a {
+    padding: 0.75em;
+    display: block;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 30px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 .about-section {
-  background-color: #f7f7f7;
+  min-height: 80vh;
+  background-image: url('./media/images/bg-mobile.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #000;
+    opacity: 0.6;
+  }
 }
 
 .about-banner {

@@ -24,22 +24,51 @@
   </head>
   <body>
     <section class="home-page">
-      <header>
-        <nav class="hamburger">
+      <article class="social-media">
+        <ul class="social-media-links container">
+          <li>
+            <a href=""><i class="fas fa-bars"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-facebook-messenger"></i></a>
+          </li>
+          <li><a href="">English</a></li>
+          <li><a href="">My Page</a></li>
+          <li><a href="">Logout</a></li>
+        </ul>
+      </article>
+      <header class="">
+        <nav class="container hamburger">
           <span class="mobile-navbar"><i class="fas fa-bars"></i></span>
         </nav>
-        <article class="mobile-menu d-none">
+        <article class="container mobile-menu d-none">
           <nav class="open-menu">
             <span class="close-menu-btn"><i class="fas fa-times"></i></span>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </nav>
         </article>
+        <article class="desktop-menu">
+          <nav class="desktop-menu-section container">
+            <img
+              src="./media/images/Logo.svg"
+              alt="Logo"
+              class="desktop-logo"
+            />
+            <ul class="desktop-menu-items">
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Schedule</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+            <button href="#" class="contact-btn">Contact Us</button>
+          </nav>
+        </article>
       </header>
-      <main class="banner-section">
+
+      <main class="banner-section container">
         <h3>"Hello! Cyber World"</h3>
         <h1>CYBER SECURITY WEBINAR 2021</h1>
         <p class="banner-paragraph">
@@ -55,32 +84,26 @@
     <section class="main-program">
       <h2>Main Program</h2>
       <article class="hr"></article>
-      <section class="program-section">
+      <section class="program-section container">
         <ul class="program-box">
           <li class="program-icon"><i class="fas fa-microphone"></i></li>
           <li class="program-heading">Lecture</li>
           <li class="program-details">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
-            similique atque est quae fugit adipisci, magni nulla. Est, earum
-            fugiat.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           </li>
         </ul>
         <ul class="program-box">
           <li class="program-icon"><i class="fas fa-globe-americas"></i></li>
           <li class="program-heading">CC Exhibition</li>
           <li class="program-details">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
-            similique atque est quae fugit adipisci, magni nulla. Est, earum
-            fugiat.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           </li>
         </ul>
         <ul class="program-box">
           <li class="program-icon"><i class="fas fa-comment-dots"></i></li>
           <li class="program-heading">Forum</li>
           <li class="program-details">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
-            similique atque est quae fugit adipisci, magni nulla. Est, earum
-            fugiat.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           </li>
         </ul>
         <ul class="program-box">
@@ -89,30 +112,28 @@
           </li>
           <li class="program-heading">Workshop</li>
           <li class="program-details">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
-            similique atque est quae fugit adipisci, magni nulla. Est, earum
-            fugiat.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           </li>
         </ul>
         <ul class="program-box">
           <li class="program-icon"><i class="fas fa-gas-pump"></i></li>
           <li class="program-heading">CC Ignite</li>
           <li class="program-details">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
-            similique atque est quae fugit adipisci, magni nulla. Est, earum
-            fugiat.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           </li>
         </ul>
+      </section>
+      <article class="program-btn">
         <a href="./about.html"
           ><button href="#" class="join-button">Join CS Webinar 2021</button></a
         >
-      </section>
+      </article>
     </section>
 
     <section class="featured-speakers">
       <h2>Featured Speakers</h2>
       <article class="hr"></article>
-      <section class="speakers-container">
+      <section class="speakers-container container">
         <ul class="speaker-box">
           <li class="speaker-image">
             <img
@@ -138,6 +159,90 @@
           <li class="speaker-image">
             <img
               src="./media/images/speakers/featured-speaker-2.jpg"
+              alt="featured-speaker-2"
+            />
+          </li>
+          <li class="speaker-info">
+            <article>
+              <h2>Moeed Yousef</h2>
+              <p class="speaker-intro">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <article class="separator"></article>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                veniam.
+              </p>
+            </article>
+          </li>
+        </ul>
+        <ul class="speaker-box">
+          <li class="speaker-image">
+            <img
+              src="./media/images/speakers/featured-speaker-2.jpg"
+              alt="featured-speaker-2"
+            />
+          </li>
+          <li class="speaker-info">
+            <article>
+              <h2>Moeed Yousef</h2>
+              <p class="speaker-intro">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <article class="separator"></article>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                veniam.
+              </p>
+            </article>
+          </li>
+        </ul>
+        <ul class="speaker-box">
+          <li class="speaker-image">
+            <img
+              src="./media/images/speakers/featured-speaker-3.jpg"
+              alt="featured-speaker-2"
+            />
+          </li>
+          <li class="speaker-info">
+            <article>
+              <h2>Moeed Yousef</h2>
+              <p class="speaker-intro">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <article class="separator"></article>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                veniam.
+              </p>
+            </article>
+          </li>
+        </ul>
+        <ul class="speaker-box">
+          <li class="speaker-image">
+            <img
+              src="./media/images/speakers/featured-speaker-4.jpg"
+              alt="featured-speaker-2"
+            />
+          </li>
+          <li class="speaker-info">
+            <article>
+              <h2>Moeed Yousef</h2>
+              <p class="speaker-intro">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <article class="separator"></article>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                veniam.
+              </p>
+            </article>
+          </li>
+        </ul>
+        <ul class="speaker-box">
+          <li class="speaker-image">
+            <img
+              src="./media/images/speakers/featured-speaker-5.jpg"
               alt="featured-speaker-2"
             />
           </li>

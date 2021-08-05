@@ -37,6 +37,14 @@ img {
   max-width: 100%;
 }
 
+.social-media {
+  display: none;
+}
+
+.desktop-menu {
+  display: none;
+}
+
 .mobile-navbar {
   display: block;
   padding: 20px;
@@ -179,19 +187,6 @@ img {
   text-align: center;
 }
 
-.program-section button {
-  color: white;
-  background-color: #ec5242;
-  padding: 1.3em 2em;
-  font-weight: 600;
-  letter-spacing: 0.11em;
-  font-size: 1rem;
-  text-align: center;
-  margin: 1.25em 0;
-  outline: none;
-  border: none;
-}
-
 .program-section .program-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,6 +234,23 @@ img {
   line-height: 1.65em;
 }
 
+.program-btn {
+  text-align: center;
+}
+
+.program-btn .join-button {
+  color: white;
+  background-color: #ec5242;
+  padding: 1.3em 2em;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  font-size: 1rem;
+  text-align: center;
+  margin: 1.25em 0;
+  outline: none;
+  border: none;
+}
+
 .featured-speakers {
   margin-top: 2em;
   text-align: center;
@@ -275,6 +287,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 10px 0;
 }
 
 .featured-speakers .speaker-box .speaker-image {
@@ -296,5 +309,126 @@ img {
   color: #ec5242;
   font-size: 0.5rem;
   font-style: italic;
+}
+
+@media (min-width: 762px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .hamburger,
+  .mobile-menu {
+    display: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  .social-media {
+    display: none;
+    background-color: #3e3e3e;
+    z-index: 10;
+    color: white;
+  }
+  .social-media .social-media-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .desktop-menu {
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+    background-color: white;
+  }
+  .desktop-menu nav > img {
+    width: 70px;
+  }
+  .desktop-menu .desktop-menu-section {
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .desktop-menu .desktop-menu-section .contact-btn {
+    margin-left: auto;
+    color: #ec5242;
+    background-color: white;
+    padding: 10px 1.5em;
+    border: 4px solid #ec5242;
+  }
+  .desktop-menu .desktop-menu-section .desktop-menu-items {
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .desktop-menu .desktop-menu-section .desktop-menu-items li > a {
+    color: #272a31;
+    font-weight: 600;
+    margin-right: 3em;
+  }
+  .banner-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    min-height: 80vh;
+  }
+  .banner-section h1 {
+    max-width: 600px;
+    font-size: 2.5rem;
+  }
+  .banner-section .banner-paragraph {
+    max-width: 400px;
+  }
+  .program-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .program-section .program-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 4px;
+  }
+  .program-section .program-box:hover {
+    border: 1px solid white;
+  }
+  .program-section .program-box .program-details {
+    text-align: center;
+  }
+  .speakers-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .speakers-container .speaker-box {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

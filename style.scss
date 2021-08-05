@@ -41,6 +41,14 @@ img {
   max-width: 100%;
 }
 
+.social-media {
+  display: none;
+}
+
+.desktop-menu {
+  display: none;
+}
+
 .mobile-navbar {
   display: block;
   padding: 20px;
@@ -173,19 +181,6 @@ img {
   margin-top: 1em;
   text-align: center;
 
-  button {
-    color: white;
-    background-color: $primaryColor;
-    padding: 1.3em 2em;
-    font-weight: 600;
-    letter-spacing: 0.11em;
-    font-size: 1rem;
-    text-align: center;
-    margin: 1.25em 0;
-    outline: none;
-    border: none;
-  }
-
   .program-box {
     display: flex;
     align-items: center;
@@ -222,6 +217,23 @@ img {
   }
 }
 
+.program-btn {
+  text-align: center;
+
+  .join-button {
+    color: white;
+    background-color: $primaryColor;
+    padding: 1.3em 2em;
+    font-weight: 600;
+    letter-spacing: 0.11em;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1.25em 0;
+    outline: none;
+    border: none;
+  }
+}
+
 .featured-speakers {
   margin-top: 2em;
   text-align: center;
@@ -255,6 +267,7 @@ img {
 
   .speaker-box {
     display: flex;
+    margin: 10px 0;
 
     .speaker-image {
       width: 180px;
@@ -278,3 +291,5 @@ img {
     }
   }
 }
+
+@import 'home-desktop-version';
