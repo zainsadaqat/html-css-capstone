@@ -2,7 +2,7 @@
 
 # HTML CSS JS Capstone Project
 
-> Hello, My name is Zain Sadaqat and this is my HTML CSS JS Capstone project. Kindly take a look by visiting the link given below. :)
+> Hello, My name is Zain Sadaqat and this is my HTML CSS JS Capstone project. This project is all about a webinar which is related to Cyber Security and going to held in 2021 and due to COVID it couldn't be held in last years. There're some well-known speakers who will be addressing in this webinar and going to talk about future trend and need of cyber security.
 
 ## Desktop View
 
@@ -11,8 +11,6 @@
 ## Mobile View
 
 ![MobileView](media/images/mobile-view.png)
-
-> This project is all about a webinar which is related to Cyber Security and going to held in 2021 and due to COVID it couldn't be held in last years. There're some well-known speakers who will be addressing in this webinar and going to talk about future trend and need of cyber security.
 
 ## Live Project Link
 
