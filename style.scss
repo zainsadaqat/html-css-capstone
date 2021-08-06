@@ -293,6 +293,7 @@ img {
   .speaker-box {
     display: flex;
     margin: 10px 0;
+    padding: 10px;
 
     .speaker-image {
       width: 180px;
@@ -302,6 +303,7 @@ img {
     .speaker-info {
       text-align: left;
       padding: 0 1.25em;
+      margin: 1.5em 0;
 
       h2 {
         text-align: left;

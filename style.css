@@ -317,6 +317,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin: 10px 0;
+  padding: 10px;
 }
 
 .featured-speakers .speaker-box .speaker-image {
@@ -327,6 +328,7 @@ img {
 .featured-speakers .speaker-box .speaker-info {
   text-align: left;
   padding: 0 1.25em;
+  margin: 1.5em 0;
 }
 
 .featured-speakers .speaker-box .speaker-info h2 {
