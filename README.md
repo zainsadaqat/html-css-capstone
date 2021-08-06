@@ -16,7 +16,7 @@
 
 ## Live Project Link
 
-> [Live Project Link:](https://zainsadaqat.github.io/html-css-js-capstone/)
+> [Live Project Link](https://zainsadaqat.github.io/html-css-js-capstone/)
 
 ## Built With
 
